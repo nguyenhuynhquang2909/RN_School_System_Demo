@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import NavBar from './components/NavBar';
 import Profile from './components/Profile';
+import Home from './screens/Home';
 
 export default function App() {
   return (
@@ -11,6 +11,9 @@ export default function App() {
         </View>
       <View style={styles.profileContainer}>
         <Profile />
+      </View>
+      <View>
+        <Home />
       </View>
     </SafeAreaView>
   );
@@ -22,7 +25,7 @@ const styles = StyleSheet.create({
   },
   profileContainer: {
     paddingHorizontal: 20,
-    paddingVertical: 40,
+    paddingVertical: 20,
     alignItems: 'center'
   }
   
